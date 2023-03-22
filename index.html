@@ -1,0 +1,386 @@
+<head>
+    <title>Personal website</title>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init('wnWfnxSOfijqb_g6H');
+      })();
+  </script>
+  
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('contact_service', 'contact_form', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+  </script>
+  
+    <link rel="stylesheet" href="personal.css" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+  
+  </head>
+  <body id="body" data-spy="scroll" data-target="#navigation" data-offset="30">
+    
+    <div id="header" class="container-fluid d-flex">
+       
+  
+      <div class="menu-overlay"></div>
+      <div>
+       
+   
+   </video>
+      </div>
+  
+      <div class="menu">
+ 
+
+        <div class="toggler">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+  
+        <ul class="nav-content" id="navigation">
+          <li><a class="nav-link" href="#header">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop">CV</a>
+            <div id="dropdown-menu">
+              <ul>
+                <li><a class="dropdown-item" href="#cv">Skills</a></li>
+                <li><a class="dropdown-item" href="#experience">Experience</a></li>
+                <li><a class="dropdown-item" href="#education">Education</a></li>
+                <li><a class="dropdown-item" href="#diplomas">Diplomas</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+  
+  
+  
+      <div class="row align-items-center justify-content-center text-center">
+        <div>
+          <h1 class="sagu1" style="padding-top: 370px;">Personal website</h1>
+          <hr>
+          <h4 class="sagu1">Template</h4>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div id="about" class="container-fluid">
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-12 picture">
+            <img id="img1" src="personal/IMG_0367.JPG" class="rounded-circle" alt="picture">
+          </div>
+          <div class="col-md-9 col-sm-12 offset-md-1">
+            <h2 class="about1">About</h2>
+            <br>
+            <h3 class="about1">I am very punctual and like to do my all works throughout the day at right time. <br>
+                 I love to eat simple and healthy food. <br>
+                 I like dancing, reading books, playing badminton and cooking in my spare time.<br>
+                 I never bunk my classes and attend every class.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="container-fluid" id="cv">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <h3>Skills</h3>
+          </div>
+          <div class="col-md-9 col-sm-12 offset-md-1">
+  
+            <div class="skills">
+              
+  
+              <div class="skill-item">
+                <h4>teamework</h4>
+                
+                  <div class="progress-bar" style="width:85%"></div>
+                </div>
+              </div>
+  
+              <div class="skill-item">
+                <h4>Flexibility</h4>
+                
+                  <div class="progress-bar" style="width:60%"></div>
+                </div>
+              </div>
+  
+  
+              <div class="skill-item">
+                <h4>Communication Skills</h4>
+                <h4> Critical Thinking Skills.</h4>
+                
+                  <div class="progress-bar" style="width:55%"></div>
+                </div>
+              </div>
+  
+            </div>
+  
+            <div class="skills">
+             
+  
+              <div class="skill-item">
+               
+             
+                  <div class="progress-bar" style="width:90%"></div>
+                </div>
+              </div>
+  
+              <div class="skill-item">
+                
+                  <div class="progress-bar" style="width:45%"></div>
+                </div>
+              </div>
+  
+  
+              <div class="skill-item">
+                
+                  <div class="progress-bar" style="width:68%"></div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="skills">
+              <h4>Languages</h4>
+  
+              <div class="skill-item">
+                <h4>malayalam</h4>
+               
+                  <div class="progress-bar" style="width:100%"></div>
+                </div>
+              </div>
+  
+  
+              <div class="skill-item">
+                <h4>english</h4>
+                
+                  <div class="progress-bar" style="width:55%"></div>
+                </div>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+  
+        <hr id="experience">
+  
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <h3>Experience</h3>
+          </div>
+          <div class="col-md-9 col-sm-12 offset-md-1">
+            <div class="exp">
+              <div class="box">
+                <h4>N/A</h4>
+                <h6>Company&emsp;&#8226;&emsp;Date</h6>
+                <p>Description</p>
+              </div>
+  
+              <div class="box">
+                <h4>N/A</h4>
+                <h6>Company&emsp;&#8226;&emsp;Date</h6>
+                <p>N/A</p>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <hr id="education">
+  
+        <div class="row">
+          <div class="col-md-2 col-sm-12">
+            <h3>Education</h3>
+          </div>
+          <div class="col-md-9 col-sm-12 offset-md-1">
+            <div class="box">
+              <h4>degree</h4>
+              <h6>royal collage of (art and science)&emsp;&#8226;&emsp;2022</h6>
+              <p>b.com corporation</p>
+            </div>
+  
+            <div class="box">
+             
+             
+            </div>
+          </div>
+        </div>
+  
+        <hr id="diplomas">
+  
+       
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  
+    <div class="container-fluid" id="portfolio">
+      <h2 style="color: black;">Latest projects</h2>
+  
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <img src="Capture.PNG">
+            <div class="overlay">
+              <h3 class="project-title">Project name</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <img class="img2" src="personal/Capture.PNG">
+            <div class="overlay">
+              <h3 class="project-title">whatsapp project</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            <img src="personal/computer-1836330.png">
+            <div class="overlay">
+              <h3 class="project-title">Project code</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+          
+            <div class="overlay">
+              <h3 class="project-title">Project name</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+            
+            <div class="overlay">
+              <h3 class="project-title">Project name</h3>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-xs-12">
+           
+            <div class="overlay">
+              <h3 class="project-title">Project name</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <div class="container-fluid" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 left">
+            <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+          </div>
+  
+          <div class="col-lg-8 offset-lg-1">
+            <h4>Let's get in touch</h4>
+  
+          
+
+            <form id="contact-form" >
+              <div class="row">
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="text" name="contact_number" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="email" class="form-control" name="user_name" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="col-md-12 mb-3">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required id="msg"></textarea>
+                  </div>
+                </div>
+                <div class="col-md-12 text-center my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="button button-a button-big button-rouded" onclick="sendMail()">Send Message</button>
+                </div>
+              </div>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  
+    <footer>
+  
+      <div class="footer-content">
+  
+        <div>
+          <h4>Location</h4>
+          <p>pattambi</p>
+        </div>
+  
+        <div>
+          <h4>Email</h4>
+          <p>swagathplathingal@gmail.com</p>
+        </div>
+  
+        <div>
+          <h4>Phone</h4>
+          <p>8086950049</p>
+        </div>
+  
+        <div>
+          <h4>Social</h4>
+  
+          <a href="https://www.linkedin.com/in/GranaryCoder/" target="_blank">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com/GranaryCoder" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://github.com/GranaryCoder" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://codepen.io/GranaryCoder" target="_blank">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </div>
+      </div>
+  
+    </footer>
+  
+  
+    <script src="personal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+    <script src="./email.js"></script>
+  
+  </body>
